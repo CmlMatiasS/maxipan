@@ -111,3 +111,11 @@ footer {
   border-color: #a0522d;   
   color: white;             
 }
+.contador {
+  font-size: 100px;
+  font-weight: bold;
+}
+.texto {
+  font-size: 24px;
+  margin-top: 10px;
+}
