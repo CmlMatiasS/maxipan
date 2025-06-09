@@ -115,9 +115,11 @@ footer {
   font-size: 100px;
   font-weight: bold;
 text-align:center;
+color:white;
 }
 .texto {
   font-size: 24px;
   margin-top: 10px;
 text-align:center;
+color: white;
 }
