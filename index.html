@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <title>Diseño con Grid</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><img src="logo22.png" height="200px" /></a>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="index.html">Maxi Pan</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactos.html">Contacto</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" />
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="contenido">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"><img src="presentacion.png" class="d-block w-100" alt="..." /></div>
+          <div class="carousel-item"><img src="presentacion2.png" class="d-block w-100" alt="..." /></div>
+          <div class="carousel-item"><img src="presentacion3.png" class="d-block w-100" alt="..." /></div>
+        </div>
+      </div>
+
+      <div>
+        <h2>COMIENZOS DE NUESTRA FAMILIA</h2>
+        <br />
+        <p>
+          Maxi Pan, fundada en 1985 en El Alto, Bolivia, comenzó como una panadería artesanal...
+        </p>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-header">Productos</div>
+        <div class="card-body">
+          <h5 class="card-title">Nuestros Mejores Productos</h5>
+          <p class="card-text">¡Calidad y tradición desde hace décadas!</p>
+          <a href="productos.html" class="btn btn-primary mi-boton">Ver productos</a>
+
+        </div>
+        <div class="card-footer text-body-secondary">Promociones</div>
+      </div>
+
+      <div class="accordion" id="accordionPanaderia">
+  <!-- Historia -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#historia" aria-expanded="true" aria-controls="historia">
+        Nuestra Historia
+      </button>
+    </h2>
+    <div id="historia" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <strong>Desde 1985 compartiendo tradición y sabor.</strong> Maxi Pan nació en El Alto con una pasión por el pan artesanal. Con recetas heredadas de generaciones y un compromiso con la calidad, hemos crecido manteniendo siempre el auténtico sabor boliviano.
+      </div>
+    </div>
+  </div>
+
+  <!-- Variedades de Pan -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#productos" aria-expanded="false" aria-controls="productos">
+        Variedades de Pan
+      </button>
+    </h2>
+    <div id="productos" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>Más de 50 variedades para todos los gustos.</strong> Desde el tradicional marraqueta hasta panes con quinua, chía y maca. Contamos con opciones integrales, sin gluten y panes especiales para niños. ¡Todos frescos cada día!
+      </div>
+    </div>
+  </div>
+
+  <!-- Compromiso Social -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#compromiso" aria-expanded="false" aria-controls="compromiso">
+        Compromiso Social
+      </button>
+    </h2>
+    <div id="compromiso" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>Creemos en una comunidad fuerte y saludable.</strong> Apoyamos a productores locales, donamos pan a instituciones sociales y educamos sobre la alimentación saludable. Maxi Pan no solo nutre cuerpos, también corazones.
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-4 pb-2 mt-auto">
+      <div class="containerR">
+        <div class="row text-center text-md-start">
+          <div class="col-md-3 mb-3">
+            <h5>Sobre Nosotros</h5>
+            <p>Ofrecemos los mejores productos con envíos a todo el país.</p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-white" href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+              <li><a class="text-white" href="nosotros.html"><i class="bi bi-info-circle"></i> Nosotros</a></li>
+              <li><a class="text-white" href="contactos.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+              <li><a class="text-white" href="politicas.html"><i class="bi bi-shield-lock"></i> Políticas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Contacto</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-geo-alt-fill"></i> El Alto, Bolivia</li>
+              <li><i class="bi bi-telephone-fill"></i> +591 777 77777</li>
+              <li><i class="bi bi-envelope-fill"></i> contacto@maxipan.com</li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <h5>Síguenos</h5>
+            <a href="https://www.facebook.com/p/Maxi-Pan-Bolivia-100085941375604/" class="text-white me-2"><i class="bi bi-facebook fs-4"></i></a>
+            <a href="https://x.com/maxipanaderia/status/959400704979931137" class="text-white me-2"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="https://www.instagram.com/maxipan.bo/" class="text-white me-2"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="https://nz.linkedin.com/company/panader%C3%ADa-maxipan" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <p class="mb-0">&copy; 2025 Maxi Pan. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

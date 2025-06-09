@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+  grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+  grid-area: header;
+  background-color: #4d0404;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-image: url('textu.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+nav {
+  grid-area: nav;
+  background-color: red;
+
+}
+.navbar{
+  padding: 10px;
+}
+main {
+  grid-area: main;
+  padding: 20px;
+  background-image: url('textura1.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  font-family: "Arial Black";
+  text-align: center;
+}
+
+.contenido {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 50px;
+}
+
+.contenido div {
+  border-radius: 15px;
+}
+
+.contenido div p,
+.contenido div h2 {
+  color: white;
+  font-family: "Arial Black";
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  padding: 50px;
+}
+
+.container, .container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Estilos del Accordion */
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(100, 50, 0, 0.2);
+}
+
+.accordion-button {
+  background-color: #a0522d !important; /* Marrón tostado */
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #8b4513 !important; /* Marrón oscuro */
+  color: #fff !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: #deb887 !important; /* Beige claro */
+}
+
+.accordion-body {
+  background-color: #fff8dc !important; /* Crema */
+  color: #4b2e1c !important; /* Marrón oscuro */
+}
