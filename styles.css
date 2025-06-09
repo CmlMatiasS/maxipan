@@ -114,8 +114,10 @@ footer {
 .contador {
   font-size: 100px;
   font-weight: bold;
+text-align:center;
 }
 .texto {
   font-size: 24px;
   margin-top: 10px;
+text-align:center;
 }
